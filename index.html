@@ -73,7 +73,7 @@
 				</section>
 
 				<section data-background="img/mixin.gif">
-					<h2>Mixins for all the things</h2>
+					<h2>Mixin all the things</h2>
 				</section>
 
 				<section>
@@ -95,9 +95,6 @@
 					<h2>Make the computer do the hard work</h2>
 				</section>
 
-				<section data-background="img/happytennant.gif">
-				</section>
-
 				<section>
 					<h1>node-px2rem</h1>
 					<h4><a href="https://github.com/ggkovacs/node-px2rem">github.com/ggkovacs/node-px2rem</a></h4>
@@ -106,6 +103,114 @@
 				<section>
 					<h1>node-pixrem</h1>
 					<h4><a href="https://github.com/robwierzbowski/node-pixrem">github.com/robwierzbowski/node-pixrem</a></h4>
+				</section>
+
+				<section data-background="img/happytennant.gif">
+				</section>
+
+				<section>
+					<h2>Extend all the things</h2>
+				</section>
+
+				<section data-background="img/dry.jpg">
+				</section>
+
+				<section>
+					<h1>Extends</h1>
+					<pre>
+						<code data-trim>
+%geronimo {
+  font-size: mahoosive;
+  font-weight: stonking;
+  color: unicornHorn;
+}
+
+.massive-header {
+  @extend %geronimo;
+}
+
+.allons-y {
+  @extend %geronimo;
+}
+
+.dalek {
+  @extend %geronimo;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>…compiles into</h1>
+					<pre>
+						<code data-trim>
+.massive-header,
+.allons-y,
+.dalek {
+  font-size: mahoosive;
+  font-weight: stonking;
+  color: unicornHorn;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Mixins</h1>
+					<pre>
+						<code data-trim>
+@mixin geronimo() {
+  font-size: mahoosive;
+  font-weight: stonking;
+  color: unicornHorn;
+}
+
+.massive-header {
+  @include geronimo();
+}
+
+.allons-y {
+  @include geronimo();
+}
+
+.dalek {
+  @include geronimo();
+}
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<h1>…compiles into</h1>
+					<pre>
+						<code data-trim>
+.massive-header {
+  font-size: mahoosive;
+  font-weight: stonking;
+  color: unicornHorn;
+}
+
+.allons-y {
+  font-size: mahoosive;
+  font-weight: stonking;
+  color: unicornHorn;
+}
+
+.dalek {
+  font-size: mahoosive;
+  font-weight: stonking;
+  color: unicornHorn;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>It's better to repeat a selector than to repeat declarations over and over</h3>
+					<h3>right?</h3>
+				</section>
+
+				<section data-background="img/nopetennant.gif">
 				</section>
 
 
