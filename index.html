@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Not So Sasst</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -32,6 +32,10 @@
 		<style type="text/css" media="screen">
 			.reveal .headline--small {
 				font-size: 50%;
+			}
+
+			.faint-background .slide-background.present {
+				opacity: 0.5;
 			}
 		</style>
 
@@ -213,6 +217,24 @@
 				<section data-background="img/nopetennant.gif">
 				</section>
 
+				<section>
+					<img src="img/mixinsizes.png" alt="" />
+				</section>
+
+				<section>
+					<h1>Turns out</h1>
+					<h3>Gzip is great at compressing repetition</h3>
+					<h4><a href="https://tech.bellycard.com/blog/sass-mixins-vs-extends-the-data/">Sass Mixins vs Extends: The Data</a></h4>
+				</section>
+
+				<section data-background="img/goat.jpg" data-state="faint-background">
+					<blockquote>
+						Repetition in a compiled system is not a bad thing: repetition in source is a bad thing.
+						<footer>
+							<cite>— <a href="http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/">Harry Roberts</a></cite>
+						</footer>
+					</blockquote>
+				</section>
 
 			</div>
 
