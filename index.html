@@ -155,6 +155,89 @@
 					<h4><a href="https://github.com/postcss/autofixer">github.com/postcss/autoprefixer</a></h4>
 				</section>
 
+
+				<section data-background="img/nesting.jpg">
+					<h1>Nesting</h1>
+				</section>
+
+				<section data-state="full-screen-code">
+					<pre><code>body {
+  div.container {
+    div.content {
+      div.articles {
+        &amp; > div.post {
+          div.title {
+            h1 {
+              a {
+              }
+            }
+          }
+          div.content {
+            p { }
+            ul {
+              li { }
+            }
+          }
+        }
+      }
+    }
+  }
+}</code></pre>
+				</section>
+
+				<section>
+					<h2>I'm starting to feel the same way about BEM-esque nesting classnames.</h2>
+				</section>
+
+				<section data-state="full-screen-code">
+<pre><code>
+.module {
+  margin: 10px;
+
+  &amp;__header {
+    font-size: 1.5em;
+
+    &amp;__icon {
+      color: rebeccapurple;
+    }
+  }
+
+  &amp;--large {
+    margin: 20px;
+
+    &amp; .module__header {
+      font-size: 2em;
+    }
+  }
+}
+</code></pre>
+				</section>
+
+				<section data-state="full-screen-code">
+<pre><code>
+.module {
+  margin: 10px;
+}
+
+.module__header {
+  font-size: 1.5em;
+}
+
+.module__header__icon {
+  color: rebeccapurple;
+}
+
+.module--large {
+  margin: 20px;
+}
+
+.module--large .module__header {
+  font-size: 2em;
+}
+</code></pre>
+				</section>
+
+
 				<section data-background="img/dry.jpg" data-state="faint-background">
 					<h2>Extend all the things</h2>
 				</section>
