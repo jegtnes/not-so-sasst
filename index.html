@@ -37,6 +37,13 @@
 			.faint-background .slide-background.present {
 				opacity: 0.5;
 			}
+
+			.full-screen-code pre code {
+				height: 100%;
+				width: 100%;
+				max-height: 100%;
+				max-width: 100%;
+			}
 		</style>
 
 		<!--[if lt IE 9]>
@@ -148,18 +155,12 @@
 					<h4><a href="https://github.com/postcss/autofixer">github.com/postcss/autoprefixer</a></h4>
 				</section>
 
-				<section>
+				<section data-background="img/dry.jpg" data-state="faint-background">
 					<h2>Extend all the things</h2>
 				</section>
 
-				<section data-background="img/dry.jpg">
-				</section>
-
-				<section>
-					<h1>Extends</h1>
-					<pre>
-						<code data-trim>
-%geronimo {
+				<section data-state="full-screen-code">
+<pre><code data-trim>%geronimo {
   font-size: mahoosive;
   font-weight: stonking;
   color: unicornHorn;
@@ -175,27 +176,20 @@
 
 .dalek {
   @extend %geronimo;
-}
-						</code>
-					</pre>
+}</code></pre>
 				</section>
 
-				<section>
-					<h1>…compiles into</h1>
-					<pre>
-						<code data-trim>
-.massive-header,
+				<section data-state="full-screen-code">
+<pre><code data-trim>.massive-header,
 .allons-y,
 .dalek {
   font-size: mahoosive;
   font-weight: stonking;
   color: unicornHorn;
-}
-						</code>
-					</pre>
+}</code></pre>
 				</section>
 
-				<section>
+				<section data-state="full-screen-code">
 					<h1>Mixins</h1>
 					<pre>
 						<code data-trim>
@@ -220,8 +214,8 @@
 				</pre>
 				</section>
 
-				<section>
-					<h1>…compiles into</h1>
+				<section data-state="full-screen-code">
+					<h1>Mixin compiled</h1>
 					<pre>
 						<code data-trim>
 .massive-header {
@@ -271,9 +265,7 @@
 						</footer>
 					</blockquote>
 				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
