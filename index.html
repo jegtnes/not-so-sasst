@@ -163,7 +163,7 @@
 					<h1>Nesting</h1>
 				</section>
 
-				<section data-state="full-screen-code">
+				<section>
 					<pre class="language-scss"><code>body {
   div.container {
     div.content {
@@ -177,9 +177,6 @@
           }
           div.content {
             p { }
-            ul {
-              li { }
-            }
           }
         }
       }
@@ -193,8 +190,7 @@
 				</section>
 
 				<section data-state="full-screen-code">
-<pre class="language-scss"><code>
-.module {
+<pre class="language-scss"><code>.module {
   margin: 10px;
 
   &amp;__header {
@@ -277,9 +273,7 @@
 
 				<section data-state="full-screen-code">
 					<h1>Mixins</h1>
-					<pre>
-					 class="language-scss"	<code data-trim>
-@mixin geronimo() {
+<pre class="language-scss"><code data-trim>@mixin geronimo() {
   font-size: mahoosive;
   font-weight: stonking;
   color: unicornHorn;
@@ -295,16 +289,12 @@
 
 .dalek {
   @include geronimo();
-}
-					</code>
-				</pre>
+}</code></pre>
 				</section>
 
 				<section data-state="full-screen-code">
 					<h1>Mixin compiled</h1>
-					<pre>
-					 class="language-scss"	<code data-trim>
-.massive-header {
+<pre class="language-scss"><code data-trim>.massive-header {
   font-size: mahoosive;
   font-weight: stonking;
   color: unicornHorn;
@@ -320,9 +310,7 @@
   font-size: mahoosive;
   font-weight: stonking;
   color: unicornHorn;
-}
-						</code>
-					</pre>
+}</code></pre>
 				</section>
 
 				<section>
