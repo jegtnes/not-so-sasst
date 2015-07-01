@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/prism.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -28,6 +28,8 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<script src="lib/js/prism.js"></script>
 
 		<style type="text/css" media="screen">
 			.reveal .headline--small {
@@ -44,6 +46,7 @@
 				max-height: 100%;
 				max-width: 100%;
 			}
+
 		</style>
 
 		<!--[if lt IE 9]>
@@ -161,7 +164,7 @@
 				</section>
 
 				<section data-state="full-screen-code">
-					<pre><code>body {
+					<pre class="language-scss"><code>body {
   div.container {
     div.content {
       div.articles {
@@ -190,7 +193,7 @@
 				</section>
 
 				<section data-state="full-screen-code">
-<pre><code>
+<pre class="language-scss"><code>
 .module {
   margin: 10px;
 
@@ -214,7 +217,7 @@
 				</section>
 
 				<section data-state="full-screen-code">
-<pre><code>
+<pre class="language-scss"><code>
 .module {
   margin: 10px;
 }
@@ -243,7 +246,7 @@
 				</section>
 
 				<section data-state="full-screen-code">
-<pre><code data-trim>%geronimo {
+<pre class="language-scss"><code data-trim>%geronimo {
   font-size: mahoosive;
   font-weight: stonking;
   color: unicornHorn;
@@ -263,7 +266,7 @@
 				</section>
 
 				<section data-state="full-screen-code">
-<pre><code data-trim>.massive-header,
+<pre class="language-scss"><code data-trim>.massive-header,
 .allons-y,
 .dalek {
   font-size: mahoosive;
@@ -275,7 +278,7 @@
 				<section data-state="full-screen-code">
 					<h1>Mixins</h1>
 					<pre>
-						<code data-trim>
+					 class="language-scss"	<code data-trim>
 @mixin geronimo() {
   font-size: mahoosive;
   font-weight: stonking;
@@ -300,7 +303,7 @@
 				<section data-state="full-screen-code">
 					<h1>Mixin compiled</h1>
 					<pre>
-						<code data-trim>
+					 class="language-scss"	<code data-trim>
 .massive-header {
   font-size: mahoosive;
   font-weight: stonking;
@@ -371,7 +374,6 @@
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
